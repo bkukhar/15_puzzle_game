@@ -40,7 +40,7 @@ const shuffleState = (stateOfGame) => {
 
 const checkWin = function() {
     if (stateOfGame.join() === winningState.join()) {
-        alert("Congratulation, you won. Close this window to start again");
+        alert('Congratulation, you won. Close this window to start again');
         stateOfGame = shuffleState(fifteen);
         renderGame(stateOfGame);
     }
